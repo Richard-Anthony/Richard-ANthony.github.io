@@ -1,0 +1,111 @@
+
+
+.box-container
+{
+    
+    position: relative;
+    width: 1200px;
+    height: 300px;
+    margin: 240px auto;
+}
+.boxes-container .box
+{
+    position: relative;
+    width: calc(400px - 30px);
+    height: calc(300px - 30px);
+    background: #000;
+    float: left;
+    margin: 15px;
+    box-sizing: border-box;
+    overflow: hidden;
+    border-radius: 10px;
+}
+.boxes-container .box .icon
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #f00;
+    transition: 0.5s;
+    z-index: 1;
+}
+.boxes-container .box:hover .icon
+{
+    top: 20px;
+    left: calc(50% - 40px);
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+.boxes-container .box .icon .fa
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 80px;
+    transition: 0.5s;
+    color: #fff;
+}
+.boxes-container .box:hover .icon .fa
+{
+    font-size: 40px;
+}
+.boxes-container .box .content
+{
+    position: absolute;
+    top: 100%;
+    height: calc(100% - 100px);
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+    transition: 0.5s;
+    opacity: 0;
+}
+.boxes-container .box:hover .content
+{
+    top: 100px;
+    opacity: 1;
+}
+.boxes-container .box .content h3
+{
+    margin: 0 0 10px;
+    padding: 0;
+    color: #fff;
+    font-size: 24px;
+}
+.boxes-container .box .content p
+{
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+}
+
+
+.boxes-container .box:nth-child(1) .icon
+{
+    background: #2396c4;
+}
+.boxes-container .box:nth-child(1)
+{
+    background: #2396c4;
+}
+.boxes-container .box:nth-child(2) .icon
+{
+    background: #273cb3;
+}
+.boxes-container .box:nth-child(2)
+{
+    background: #273cb3;
+}
+.boxes-container .box:nth-child(3) .icon
+{
+    background: #12136d;
+}
+.boxes-container .box:nth-child(3)
+{
+    background: #12136d;
+}

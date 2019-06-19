@@ -1,0 +1,153 @@
+body, html {
+	margin: 0;
+	padding: 0;
+	
+}
+
+.section {
+	min-height: 800px;
+	position: relative;
+	text-align: center;
+	font-family: sans-serif, arial;
+	margin: 0;
+}
+
+
+
+.text-wr {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	-moz-transform: translate(-50%, -50%);
+	-o-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
+
+#section1 {
+background-image: url(../images/pool2.jpg);
+  
+ background-size: cover;
+}
+
+#section1 h1 {
+	text-align: center;
+	padding-top: 5%;
+	
+    font-size: 80px;
+    font-family: 'Dosis', sans-serif;
+    font-weight: bold;
+}
+
+#section2 {
+	background: #35c2fa;
+	color: #ffffff;
+}
+
+#section3 {
+	background: #283044;
+	color: #ffffff;
+}
+
+#section4 {
+	background: #ebf5ee;
+	color: #5e5858;
+}
+
+
+
+.title-top {
+	font-size: 60px;
+	padding-bottom: 30px;
+}
+
+.title-bottom {
+	font-size: 30px;
+}
+
+.title-tx {
+	font-size: 20px;
+	opacity: 0.8;
+}
+
+
+.sticky {
+  position: fixed;
+}
+
+.nav a {
+	float: left;
+	display: block;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	-webkit-transition: all 0.2s ease-out;
+	-moz-transition: all 0.2s ease-out;
+	-ms-transition: all 0.2s ease-out;
+	-o-transition: all 0.2s ease-out;
+	transition: all 0.2s ease-out;
+	text-decoration: none;
+	color: rgb(255, 255, 255);
+	font-family: sans-serif, arial;
+	font-weight: 100;
+
+}
+
+.nav a.active {
+background-color: #fff;
+color: #000;
+}
+
+.nav a:hover {
+	background-color: rgb(53, 50, 50);
+	text-decoration: underline;
+}
+
+
+.fork-wr img {
+	position: fixed;
+	z-index: 99;
+	top: 0;
+	right: 0;
+	border: 0;
+}
+.btnRegister {
+	background: rgb(2, 4, 73);
+	color:rgb(255, 255, 255);
+	border:none;
+	position:relative;
+	height:60px;
+	font-size:1.6em;
+	padding:0 2em;
+	cursor:pointer;
+	transition:800ms ease all;
+	outline:none;
+  }
+  .btnRegister:hover{
+	background:#fff;
+	color:rgb(0, 0, 0);
+  }
+  .btnRegister:before,.btnRegister:after{
+	content:'';
+	position:absolute;
+	top:0;
+	right:0;
+	height:2px;
+	width:0;
+	background: rgb(0, 0, 0);
+	transition:400ms ease all;
+  }
+  .btnRegister:after{
+	right:inherit;
+	top:inherit;
+	left:0;
+	bottom:0;
+  }
+  .btnRegister:hover:before,.btnRegister:hover:after{
+	width:100%;
+	transition:800ms ease all;
+	}
+	.img-logo:hover{
+		-webkit-filter: drop-shadow(0px 0px 8px rgba(0, 231, 255, 0.8));
+		}
